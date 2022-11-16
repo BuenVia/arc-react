@@ -15,9 +15,9 @@ const Home = () => {
                 <h4>Contact</h4>
               </div>
               <div className="card-body">
-                <p>Tel: 07956 202 722</p>
-                <p>Office: 01472 840120</p>
-                <p>Email: James@arcsupportservices.co.uk</p>
+                <p><span className="card-bold">Tel:</span> 07956 202 722</p>
+                <p><span className="card-bold">Office:</span> 01472 840120</p>
+                <p><span className="card-bold">Email:</span> James@arcsupportservices.co.uk</p>
               </div>
               <div className="card-footer">
               </div>
@@ -29,9 +29,9 @@ const Home = () => {
                 <h4>Webinar</h4>
               </div>
                 <div className="card-body">
-                  <p>Title:</p>
-                  <p>Date:</p>
-                  <p>Time</p>
+                  <p><span className="card-bold">Title:</span></p>
+                  <p><span className="card-bold">Date:</span></p>
+                  <p><span className="card-bold">Time:</span></p>
                 </div>
                 <div className="card-footer">
                   <a href="/" class="btn btn-link">Sign-Up</a>

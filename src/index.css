@@ -1,3 +1,9 @@
+:root {
+  --txt-headline: #eee;
+  --txt-header: rgb(255, 255, 0);
+
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -14,15 +20,28 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  color: white;
+  color: var(--txt-headline);
+}
+
+.cover {
+  background-color: aqua;
 }
 
 .card {
-  background-color: black !important;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.card-header {
+  color: var(--txt-header);
+}
+
+.card-bold {
+  color: var(--txt-header);
 }
 
 .navbar {
-  color: yellow;
+  padding: 1rem;
 }
 
 .logo-img {
@@ -41,6 +60,7 @@ body {
 
 .index-header-title {
   font-size: 48px;
+  font-weight: 400;
 }
 
 .index-header-text {
@@ -50,4 +70,16 @@ body {
 .index-body {
   margin-top: 5rem;
   width: 100%;
+}
+
+.btn-link {
+  text-decoration: none;
+  background-color: var(--txt-header);
+  color: black;
+}
+
+.btn-link:hover {
+  transition: ease-in-out 200ms;
+  opacity: 0.8;
+  color: black;
 }
