@@ -17,7 +17,6 @@ export default function ServiceElement(props) {
                     >Read More</button>
                   </div>
                   <div className="card-footer">
-                    Footer
                   </div>
                 </div>
               </div>

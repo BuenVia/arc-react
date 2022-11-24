@@ -11,7 +11,6 @@ export default function Header() {
                 <a className="nav-link" href="/">Home</a>
                 <a className="nav-link" href="/services">Services</a>
                 <a className="nav-link" href="/resources">Resources</a>
-                <a className="nav-link" href="/admin" target="_blank">Admin</a>
             </div>
           </div>
         </div>

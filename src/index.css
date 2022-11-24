@@ -97,3 +97,14 @@ body {
   border: 1px solid var(--txt-header);
   outline: none;
 }
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.resource-form {
+  width: 400px;
+}

@@ -3,8 +3,6 @@ import { useState } from "react"
 export default function ServiceContainer(props) {
     
     const [subService, setSubService] = useState({})
-
-    console.log(subService)
     
     return (
         <div className="card">
@@ -21,7 +19,7 @@ export default function ServiceContainer(props) {
                                     <button key={props.service.subContent.indexOf(subContent)} className="btn btn-content" onClick={() => setSubService(subContent)}>
                                         {subContent.title}
                                     </button>
-                        )}
+                            )}
                         )}
                     </div>
                 </div>
