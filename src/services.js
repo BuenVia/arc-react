@@ -14,7 +14,7 @@ const services = [
             "An exercise we ran on behalf of a large work provision network, returned results that highlighted major concerns. Just 2% (4) of the 222 VDA’s invited to take part, achieved an accuracy score that exceeded 90% in the exercise. Not a single VDA achieved 100% accuracy in the benchmarked assessments and with the financial results in this exercise ranging from 30% short of target to 23percent over the target figure for accuracy (a difference of £1893 between the two extremes) it’s no wonder that large swathes of repairers find profit a very difficult result to achieve. Additionally, what then could be said for the integrity of the repair?"
         },
         {
-          title: "DEVELOPMENT AND TRAINING",
+          title: "Develpoment & Training",
           subTitle:
             "WHAT IF… We were able to show your VDA’s how to raise the level of performance of their repair specifications? What then, might your net profit look like?",
           content:

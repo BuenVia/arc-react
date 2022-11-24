@@ -83,3 +83,17 @@ body {
   opacity: 0.8;
   color: black;
 }
+
+.btn-box {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.btn-content {
+  width: 200px;
+  word-wrap: break-word;
+  color: var(--txt-header);
+  border: 1px solid var(--txt-header);
+  outline: none;
+}

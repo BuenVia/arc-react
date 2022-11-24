@@ -34,7 +34,7 @@ const Home = () => {
                   <p><span className="card-bold">Time:</span></p>
                 </div>
                 <div className="card-footer">
-                  <a href="/" class="btn btn-link">Sign-Up</a>
+                  <a href="/" className="btn btn-link">Sign-Up</a>
                 </div>
               </div>
           </div>
