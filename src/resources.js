@@ -7,7 +7,7 @@ const resources = [
     {
         title: 'Second File',
         auth: 'James Clifford',
-        link: 'second_file.pdf'
+        link: 'second_file  .pdf'
     }
 ]
 

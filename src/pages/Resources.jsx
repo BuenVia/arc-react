@@ -1,13 +1,29 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ResourceForm from "../components/ResourceForm"
 import ResourceDownload from "../components/ResourceDownload";
+import axios from "axios";
 
 export default function Resources() {
 
     const [showForm, setShowForm] = useState(true)
 
+    useEffect(() => {
+    }, [])
+
     function getDetails(item) {
-        console.log(item);
+
+        axios
+        .post('http://localhost:9000/api/resource', item)
+        .then(response =>{
+            console.log(response.data);
+            console.log(response.status);
+            console.log(response.statusText);
+            console.log(response.headers);
+            console.log(response.config);
+        })
+        .catch(err => console.log(err))
+
+
         setShowForm(prevVal => !prevVal)
     }
 
