@@ -13,7 +13,7 @@ export default function Resources() {
     function getDetails(item) {
 
         axios
-        .post('http://localhost:9000/api/resource', item)
+        .post('https://arcsupportservices-api.onrender.com/api/resource', item)
         .then(response =>{
             console.log(response.data);
             console.log(response.status);

@@ -2,6 +2,8 @@ import { useState } from "react"
 
 export default function ResourceForm(props) {
 
+    const [message, setMessage] = useState('')
+
     const [info, setInfo] = useState({
         fullName: '',
         email: '',
@@ -26,11 +28,16 @@ export default function ResourceForm(props) {
 
     function handleClick(e) {
         e.preventDefault()
-        props.getDetails(info)
+        if(info.name === '' || info.email === '') {
+            setMessage(<p style={{color: 'red'}}>'Please enter name and email.'</p>)
+        } else {
+            props.getDetails(info)
+        }
     }
 
     return (
         <form className="resource-form">
+            {message}
             <label className="form-label mt-4">Name</label>
             <input type="text" name='name' onChange={handleChange} value={info.fullName} className="form-control" placeholder="Name"></input>
             <label className="form-label mt-4">Email</label>
