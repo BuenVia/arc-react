@@ -5,7 +5,7 @@ export default function Home() {
   
 
     return (
-      <div className="index">
+      <div className="index mb-3">
         <div className="row index-header">
           <div className="card">
             <h2 className="index-header-title">WE BELIEVE IN CHALLENGING THE STATUS QUO!</h2>
@@ -14,7 +14,7 @@ export default function Home() {
         </div>
 
         <div className="row index-body">
-          <div className="col-md-6">
+          <div className="col-md-6 mt-3">
             <div className="card">
               <div className="card-header">
                 <h4>Contact</h4>
@@ -28,7 +28,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 mt-3">
             <Webinar />
           </div>
         </div>

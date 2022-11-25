@@ -24,15 +24,15 @@ export default function ServiceContainer(props) {
                     </div>
                 </div>
                 <div>
-                    {subService && <div className="card">
-                        <div className="card-header">
+                    {subService && <div className="mt-3">
+                        <div className="">
                             <h1>{subService.title}</h1>
                         </div>
-                        <div className="card-body">
+                        <div className="">
                             <h4>{subService.subTitle}</h4>
                             <p>{subService.content}</p>
                         </div>
-                        <div className="card-footer">
+                        <div className="">
                             <button className="btn btn-link">Contact Us</button>
                         </div>
                     </div>}

@@ -21,9 +21,9 @@ export default function Services() {
   }
 
     return (
-      <div>
+      <div className="resources mt-3">
         <h1>Services</h1>
-        <div className="row">
+        <div className="row mt-3">
           {allServices ? <ServiceContainer service={selectedService} resetServices={resetServices} /> : services.map((service) => {
             return (
               <ServiceElement key={services.indexOf(service)} service={service} serviceHandler={serviceHandler} />
