@@ -9,7 +9,7 @@ export default function Home() {
         <div className="row index-header">
           <div className="card">
             <h2 className="index-header-title">WE BELIEVE IN CHALLENGING THE STATUS QUO!</h2>
-            <p className="index-header-text">A manager accepts, the leader challenges...</p>
+            <p className="index-header-text">A manager will accept, but the leader will challenge...</p>
           </div>
         </div>
 
