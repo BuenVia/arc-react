@@ -33,7 +33,7 @@ export default function ServiceContainer(props) {
                             <p>{subService.content}</p>
                         </div>
                         <div className="">
-                            <button className="btn btn-link">Contact Us</button>
+                            <a href="/" className="btn btn-link">Contact Us</a>
                         </div>
                     </div>}
                 </div>
