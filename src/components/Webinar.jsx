@@ -9,7 +9,8 @@ export default function Webinar() {
     title: 'Webinar Title',
     date: '',
     time: '',
-    link: ''
+    link: '',
+    show: null
   })
 
   const loadWebinar = () => {
@@ -24,20 +25,33 @@ export default function Webinar() {
    loadWebinar()
   }, [])
 
+  // HTML for showiing webinar
+  const webinarHtml = (
+    <div>
+      <p><span className="card-bold">Title:</span> {webinar.title}</p>
+      <p><span className="card-bold">Date:</span> {new Date(webinar.date).toDateString()}</p>
+      <p><span className="card-bold">Time:</span> {webinar.time}</p>
+    </div>
+  )
+
+  // HTML for not showing webinar
+  const noWebinar = (
+    <div>
+      <p>No webinar's planned</p>
+      <p>Please check back later</p>
+    </div>
+  )
+
+  // If webinar.show is false - show noWebinar
+  const showWebinar = webinar.show ? webinarHtml : noWebinar
+
     return (
         <div className="card">
         <div className="card-header">
           <h4>Webinar</h4>
         </div>
           <div className="card-body">
-          {loading ? 
-          <div>
-            <p><span className="card-bold">Title:</span> {webinar.title}</p>
-            <p><span className="card-bold">Date:</span> {new Date(webinar.date).toDateString()}</p>
-            <p><span className="card-bold">Time:</span> {webinar.time}</p>
-          </div>
-          : 
-          <LoadingSpinner /> }
+          {loading ? showWebinar : <LoadingSpinner /> }
           </div>
           <div className="card-footer">
             {webinar && <a href={webinar.link} target="__blank" className="btn btn-link">Sign-Up</a>}
