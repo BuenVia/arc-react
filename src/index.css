@@ -23,7 +23,7 @@ body {
   color: var(--txt-headline);
 }
 
-.container {
+.main {
   padding-bottom: 5rem;
   height: 100%;
 }
@@ -55,6 +55,10 @@ body {
 
 .card-bold {
   color: var(--txt-header);
+}
+
+.header{
+  border-bottom: 1px solid silver;
 }
 
 .navbar {
