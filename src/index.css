@@ -13,14 +13,31 @@
 body {
   font-family: 'Noto Sans', sans-serif;
   background-image: url('../public/assets/background4.jpg');
-  height: 100%;
-
+  min-height: 100vh;
+  position: relative;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: var(--txt-headline);
+}
+
+.container {
+  padding-bottom: 5rem;
+  height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cover {
@@ -118,4 +135,9 @@ body {
 
 .resource-form {
   max-width: 400px;
+}
+
+.link-text {
+  text-decoration: none;
+  color: var(--txt-header);
 }
